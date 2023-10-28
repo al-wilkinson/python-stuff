@@ -4,7 +4,6 @@ import requests
 import re
 
 def extract_ip_addresses(text):
-    # Regular expression pattern to match IP addresses in the format '137.74.181[.]100'
     ip_pattern = r'\b(?:\d{1,3}\.\d{1,3}\.\d{1,3}\[.\]\d{1,3})\b'
     
     # Find all IP addresses in the text using the regular expression
@@ -35,7 +34,7 @@ if __name__ == "__main__":
         ip_addresses = extract_ip_addresses(web_page_content)
         
         # Print the list of IP addresses found
-        print(web_page_content)
+        # print(web_page_content)
         print("IP Addresses:")
         for ip in ip_addresses:
             characters_to_remove = ['[',']']
